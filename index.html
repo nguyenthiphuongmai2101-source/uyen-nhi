@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Thư mời kỉ yếu 🌈</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+    background: linear-gradient(135deg,
+        #ffd6e0, #ffe5b4, #ffffcc,
+        #ccffe5, #d6e0ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* khung chính */
+.card {
+    width: 420px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    border: 3px dashed #ff8fab;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* tiêu đề */
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: #ff4d6d;
+    margin-bottom: 10px;
+}
+
+/* sticker top */
+.top-icons {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+/* gấu gif */
+.bear {
+    width: 100px;
+    margin: 10px auto;
+}
+
+/* nội dung */
+.text {
+    font-size: 18px;
+}
+
+.name {
+    color: #ff006e;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* box info */
+.box {
+    margin-top: 15px;
+    padding: 15px;
+    border-top: 2px dashed #ffb3c6;
+}
+
+/* icon */
+.icon {
+    font-size: 20px;
+}
+
+/* footer */
+.footer {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* sticker xung quanh */
+.sticker {
+    position: absolute;
+    font-size: 26px;
+}
+
+.s1 { top: -10px; left: -10px; }
+.s2 { top: -10px; right: -10px; }
+.s3 { bottom: -10px; left: -10px; }
+.s4 { bottom: -10px; right: -10px; }
+
+/* bóng bay */
+.balloon {
+    position: absolute;
+    bottom: -80px;
+    font-size: 28px;
+    animation: fly 7s linear infinite;
+}
+
+.balloon:nth-child(1){left:10%;}
+.balloon:nth-child(2){left:30%; animation-delay:2s;}
+.balloon:nth-child(3){left:60%; animation-delay:4s;}
+.balloon:nth-child(4){left:80%; animation-delay:6s;}
+
+@keyframes fly {
+    0% { transform: translateY(0); opacity:0; }
+    20% { opacity:1; }
+    100% { transform: translateY(-110vh); opacity:0; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- bóng bay -->
+<div class="balloon">🎈</div>
+<div class="balloon">🎈</div>
+<div class="balloon">🎈</div>
+<div class="balloon">🎈</div>
+
+<div class="card">
+
+    <!-- sticker -->
+    <div class="sticker s1">🌈</div>
+    <div class="sticker s2">⭐</div>
+    <div class="sticker s3">🎉</div>
+    <div class="sticker s4">❤️</div>
+
+    <!-- icon đầu -->
+    <div class="top-icons">
+        🌈 🎓 🎓 🌈 ⭐ ☁️
+    </div>
+
+    <div class="title">Thư mời kỉ yếu</div>
+
+    <!-- gif gấu -->
+    <img class="bear" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+
+    <div class="text">
+        Con là <span class="name">Nguyễn Ngọc Uyên Nhi</span> ❤️<br>
+        Mời <b>đại gia đình</b> đến dự kỉ yếu cùng con nhaaaa 🎉
+    </div>
+
+    <div class="box">
+        <div class="text">
+            📍 <b>Địa điểm:</b><br>
+            Sân trường khu A<br>
+            THPT Phan Châu Trinh<br>
+            154 Lê Lợi
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="text">
+            ⏰ <b>Thời gian:</b><br>
+            9h00 – 10h30<br>
+            Ngày 27/04/2026
+        </div>
+    </div>
+
+    <div class="footer">
+        Con chờ gia đình đó 💕💕
+    </div>
+
+</div>
+
+</body>
+</html>
